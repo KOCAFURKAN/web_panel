@@ -1,0 +1,66 @@
+{%block head %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%block <title></title> %}<title>Ana Menü</title>{%endblock%}
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+{%endblock%}
+
+<body>
+    {%block mainmenu %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Ana Menü</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="menu1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Çalışanlar
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="menu1">
+                        <a class="dropdown-item" href="http://127.0.0.1:8000/staff/view">Görüntüle</a>
+                        <a class="dropdown-item" href="http://127.0.0.1:8000/staff/ping">Kayıt</a>
+                        <a class="dropdown-item" href="http://127.0.0.1:8000/staff/profile">Profil</a>
+                        <a class="dropdown-item" href="http://127.0.0.1:8000/staff/overtime">Mesai</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="menu2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menü 2
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="menu2">
+                        <a class="dropdown-item" href="#">Seçenek 1</a>
+                        <a class="dropdown-item" href="#">Seçenek 2</a>
+                        <a class="dropdown-item" href="#">Seçenek 3</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="menu3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menü 3
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="menu3">
+                        <a class="dropdown-item" href="#">Seçenek 1</a>
+                        <a class="dropdown-item" href="#">Seçenek 2</a>
+                        <a class="dropdown-item" href="#">Seçenek 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    {%endblock%}
+    {%block content %}
+    {%endblock%}
+    {%block scripts %}
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    {%endblock%}
+</body>
+</html>

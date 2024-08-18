@@ -1,0 +1,48 @@
+{%extends "base.html"%}
+
+{%block content %} 
+<body>
+    <div class="container mt-5">
+        <h2>Kullanıcı Bilgileri Formu</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="firstName">Ad</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Adınızı girin">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="lastName">Soyad</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Soyadınızı girin">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="username">Kullanıcı Adı</label>
+                    <input type="text" class="form-control" id="username" placeholder="Kullanıcı adınızı girin">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="password">Şifre</label>
+                    <input type="password" class="form-control" id="password" placeholder="Şifrenizi girin">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="address">Adres</label>
+                    <input type="text" class="form-control" id="address" placeholder="Adresinizi girin">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="phone">Telefon Numarası</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Telefon numaranızı girin">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="balance">Denge</label>
+                    <input type="text" class="form-control" id="balance" placeholder="Dengenizi girin">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="overtime">Mesai Ödemesi</label>
+                    <input type="text" class="form-control" id="overtime" placeholder="Mesai ödemenizi girin">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+        </form>
+    </div>
+
+{% endblock%}

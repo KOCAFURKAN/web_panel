@@ -1,0 +1,32 @@
+{%extends "base.html"%}
+
+{%block content %} 
+<div class="container mt-5">
+    <h2>Kullanıcı Formu</h2>
+    <form>
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Sütun 1</th>
+                    <th scope="col">Sütun 2</th>
+                    <th scope="col">Sütun 3</th>
+                    <th scope="col">Yazılabilir Sütun</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Veri 1</td>
+                    <td>Veri 2</td>
+                    <td>Veri 3</td>
+                    <td>
+                        <input type="text" class="form-control" placeholder="Yazınız">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Buton -->
+        <button type="submit" class="btn btn-primary mt-3">Gönder</button>
+    </form>
+</div>
+{% endblock%}

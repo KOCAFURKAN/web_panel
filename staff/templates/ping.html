@@ -1,0 +1,45 @@
+{%extends "base.html"%}
+
+{%block content %} 
+<div class="container mt-5">
+    <table class="table table-bordered">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Tarih</th>
+                <th scope="col">Konum</th>
+                <th scope="col">İşlem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Veri 1</td>
+                <td>Veri 2</td>
+                <td> 
+                    <button type="button" class="btn btn-primary btn-block">Giriş</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!--Son 7 kaydı gösterir. -->
+<div class="container mt-5">
+    <table class="table table-bordered">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Tarih</th>
+                <th scope="col">Konum</th>
+                <th scope="col">İşlem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Veri 1</td>
+                <td>Veri 2</td>
+                <td> 
+                    Giriş
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock%}
